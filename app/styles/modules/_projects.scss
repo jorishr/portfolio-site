@@ -28,7 +28,7 @@
             font-size: 64px;
         }
 
-        &:nth-of-type(2) .image-container {
+        &:nth-of-type(2n+1) .image-container {
             order: unset;
         }
 
