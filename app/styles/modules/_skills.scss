@@ -1,0 +1,47 @@
+section#skills {
+    scroll-behavior: smooth;
+}
+
+.skills-subtitle {
+    text-align: center;
+    font-size: var(--fs-lg);
+    max-width: 650px;
+    margin: 0 auto 2em auto;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2em;
+    margin-bottom: 4em;
+
+    .card {
+
+        h3 {
+            font-weight: 400;
+            font-size: var(--fs-lg);
+            margin-bottom: .5em;
+
+            span {
+                color: var(--accent);
+                font-size: 64px;
+            }
+        }
+    }
+}
+
+.extra {
+    h3 {    
+        font-weight: 400;
+        font-size: var(--fs-md);
+        margin-bottom: 1em;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    a:hover {
+        color: var(--textColor-base);
+    } 
+}

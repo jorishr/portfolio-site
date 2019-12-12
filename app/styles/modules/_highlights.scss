@@ -1,0 +1,83 @@
+.highlights {
+    padding: var(--pd-base);
+    text-align: center;
+    margin: 0 auto;
+    
+    h2 {
+        margin-bottom: .5em;
+    }
+
+    h3 {
+        font-weight: 400;
+        margin: 0 auto 2em auto;
+        max-width: 650px;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            border: 1px solid var(--accent);
+            padding: var(--pd-base);
+
+            h4 {
+                font-weight: 400;
+                font-size: var(--fs-lg);
+                margin-bottom: 1em;
+            }
+
+            p {
+                margin-bottom: 2em;
+            }
+
+            a.btn {
+                margin-top: auto;
+                max-width: 50%;
+                align-self: center;
+                transition: ease-in .3s transform;
+            }
+
+            a.btn:hover {
+                transform: scale(1.025);
+            }
+        }
+    }
+}
+.codepen-container {
+    padding: 0 var(--pd-base);
+    position: relative;
+
+    img {
+        padding: 0 var(--pd-base);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 4em;
+        bottom: 0;
+        left: 4em;
+
+        background-color: var(--textColor-base);
+        opacity: .7;
+        transition: ease-in .3s all;
+
+        a.btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--accent);
+            font-size: var(--fs-lg);
+        }
+        &:hover {
+            opacity: .5;
+
+        }
+    }
+}

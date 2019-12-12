@@ -1,0 +1,103 @@
+.projects-section {
+    border-top: 1px solid var(--accent);
+    padding: var(--pd-lg) var(--pd-sm);
+    scroll-behavior: smooth;
+
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 2em;
+
+        span {
+            color: var(--accent);
+            font-size: 64px;
+        }
+    }
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(252, 252, 252);
+        margin-bottom: 4em;
+        box-shadow: 5px 5px 25px 0 rgba(0,0,0, .25);
+        padding: var(--pd-base) var(--pd-sm);
+
+        span {
+            color: var(--accent);
+            font-size: 64px;
+        }
+
+        &:nth-of-type(2) .image-container {
+            order: unset;
+        }
+
+        .image-container {
+            order: 1;
+            width: 70%;
+            padding: var(--pd-base);
+        }
+
+        .legend-container {
+            width: 30%;
+            padding: var(--pd-sm) var(--pd-base);
+
+            .titles {
+                margin: 2em 0;
+
+                h3, 
+                h4 {
+                    font-weight: 400;
+                    text-align: center;
+                    line-height: 1.75;
+                }   
+
+                h3 {
+                    font-size: 1.75em;
+                    margin-bottom: 1em;
+                }
+            }
+            .links {
+                margin-bottom: 2em;
+
+                a.btn {
+                    display: block;
+                    max-width: 50%;
+                    margin: 2em auto;
+                    font-size: var(--fs-sm);
+                    transition: ease-in .3s all;
+               }
+
+               a.btn:hover {
+                   transform: scale(1.025);
+               }
+            }
+        }
+        .features {
+            width: 100%;
+            order: 3;
+            padding: var(--pd-base);
+
+            h4 {
+                font-weight: 400;
+                font-size: var(--fs-lg);
+                margin-bottom: .5em;
+            }
+
+            h5 {
+                margin-bottom: 1em;
+                font-weight: 400;
+                color: var(--textColor-light);
+            }
+
+            ul {
+                list-style-type: disc;
+
+                li {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+
+    }
+}

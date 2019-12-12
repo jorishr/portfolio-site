@@ -1,0 +1,31 @@
+.hero-section {
+    padding: var(--pd-lg);
+    padding-bottom: .5em;
+    margin-bottom: 4em;
+
+    h1, h2 {
+        margin-bottom: .5em;
+    }
+
+    h1 {
+        font-size: var(--fs-md);
+        font-weight: 400;
+        margin-bottom: .5em;
+    }
+
+    h2 {
+        font-size: var(--fs-base);
+        font-weight: 400;
+        color: var(--textColor-light);
+    }
+
+    p {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 80px;
+
+        span {
+            color: var(--accent);
+        }
+    }
+}
