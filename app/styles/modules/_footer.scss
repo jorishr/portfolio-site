@@ -21,12 +21,13 @@ footer {
         display: flex;
         justify-content: space-around;
         padding: var(--pd-base) 0;
+
         a {
             padding: var(--pd-sm) var(--pd-sm) var(--pd-sm) var(--pd-lg);
-            width: 350px;
             text-align: left;
             color: var(--bgColor-accent);
             font-size: var(--fs-md);
+            display: flex;
     
             i {
                 padding-right: 1em;

@@ -565,10 +565,12 @@ footer {
 
 .contact .contact-links a {
   padding: var(--pd-sm) var(--pd-sm) var(--pd-sm) var(--pd-lg);
-  width: 350px;
   text-align: left;
   color: var(--bgColor-accent);
   font-size: var(--fs-md);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact .contact-links a i {
