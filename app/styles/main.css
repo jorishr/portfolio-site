@@ -168,6 +168,10 @@ header nav li a:focus {
   }
 }
 
+#seo-img {
+  display: none;
+}
+
 .hero-section {
   padding: var(--pd-lg);
   padding-bottom: .5em;
