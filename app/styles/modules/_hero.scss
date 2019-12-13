@@ -1,31 +1,51 @@
 .hero-section {
     padding: var(--pd-lg);
     padding-bottom: .5em;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
 
     h1, h2 {
         margin-bottom: .5em;
     }
 
     h1 {
-        font-size: var(--fs-md);
+        font-size: var(--fs-base);
         font-weight: 400;
         margin-bottom: .5em;
     }
 
     h2 {
-        font-size: var(--fs-base);
+        font-size: var(--fs-sm);
         font-weight: 400;
         color: var(--textColor-light);
     }
 
     p {
-        font-size: 60px;
+        font-size: 25px;
         font-weight: 400;
-        line-height: 80px;
+        line-height: 60px;
 
         span {
             color: var(--accent);
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+
+    .hero-section {
+    
+        h1 {
+            font-size: var(--fs-md);
+        }
+    
+        h2 {
+            font-size: var(--fs-base);
+        }
+    
+        p {
+            font-size: 60px;
+            line-height: 80px;   
         }
     }
 }

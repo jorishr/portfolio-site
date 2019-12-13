@@ -2,7 +2,7 @@
     padding: var(--pd-base);
     text-align: center;
     margin: 0 auto;
-    
+
     h2 {
         margin-bottom: .5em;
     }
@@ -16,14 +16,16 @@
     .cards {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
 
         .card {
             display: flex;
             flex-direction: column;
-            width: 45%;
+            width: 100%;
             border: 1px solid var(--accent);
             padding: var(--pd-base);
+            margin-bottom: 4em;
 
             h4 {
                 font-weight: 400;
@@ -47,10 +49,25 @@
             }
         }
     }
+
+    @media screen and (min-width: 768px){
+  
+        .cards {
+            flex-direction: row;
+    
+            .card {
+                flex-direction: column;
+                width: 45%;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
+
 .codepen-container {
-    padding: 0 var(--pd-base);
+    padding: 0;
     position: relative;
+    margin-bottom: 2em;
 
     img {
         padding: 0 var(--pd-base);
@@ -59,9 +76,9 @@
     .overlay {
         position: absolute;
         top: 0;
-        right: 4em;
+        right: 2em;
         bottom: 0;
-        left: 4em;
+        left: 2em;
 
         background-color: var(--textColor-base);
         opacity: .7;
@@ -73,11 +90,26 @@
             top: 50%;
             transform: translate(-50%, -50%);
             background-color: var(--accent);
-            font-size: var(--fs-lg);
+            font-size: var(--fs-base);
         }
         &:hover {
             opacity: .5;
 
         }
+    }
+
+    @media screen and (min-width:768px){
+    
+        .codepen-container {
+            padding: 0 var(--pd-base);
+            .overlay{
+                left: 4em;
+                right: 4em;
+                a.btn {
+                    font-size: var(--fs-lg);
+                }
+        }
+    }
+
     }
 }

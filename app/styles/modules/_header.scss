@@ -1,41 +1,55 @@
 header {
     .header-container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding: var(--pd-base);
-    }
 
-    .logo {
-        width: 135px;
-        font-weight: 400;
-        font-size: var(--fs-lg);
-
-        hr {
-            width: 135px;
-            height: 3px;
-            background-color: var(--textColor-base);
+        i {
+            color: var(--textColor-light);
         }
 
-        p {
-            position: relative;
-            display: inline-block;
-            
-            span {
-                color: rgb(151, 0, 0);
-                font-size: 50px;
-                position: absolute;
-                top: -32px;
-                right: -15px;
+        .logo {
+            width: 135px;
+            font-weight: 400;
+            font-size: var(--fs-lg);
+    
+            hr {
+                width: 135px;
+                height: 3px;
+                background-color: var(--textColor-base);
+            }
+    
+            p {
+                position: relative;
+                display: inline-block;
+                
+                span {
+                    color: rgb(151, 0, 0);
+                    font-size: 50px;
+                    position: absolute;
+                    top: -32px;
+                    right: -15px;
+                }
             }
         }
-   }
+    }
 
-
-    nav {
+    nav {       
+        
+        &.hidden {
+            display: none;
+        }
+        
+        position: absolute;
+        top: 6em;  
+        right: 1em;  
 
         li {
-            display: inline-block;
-        
+            display: block;
+            margin-bottom: 2em;
+            text-align: right;
+
             a {
                 text-transform: uppercase;
                 letter-spacing: 1px;
@@ -52,10 +66,26 @@ header {
             a:focus {
                 font-weight: 700;
             }
+        }       
+    }
+
+
+    @media screen and (min-width:768px){
+        
+        .toggle {
+            display: none;
         }
 
-        li + li {
-            margin-left: 2em;
+        nav {
+            position: static;
+    
+            li {
+                display: inline-block;
+            }
+    
+            li + li {
+                margin-left: 2em;
+            }
         }
     }
 }
