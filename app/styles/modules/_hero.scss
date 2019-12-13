@@ -28,6 +28,19 @@
             color: var(--accent);
         }
     }
+    
+    p:first-of-type {
+        animation: fadeInLeftBig .75s ease-in forwards;
+    }
+    p:nth-of-type(2) {
+        animation: fadeInLeftBig 1.25s ease-in forwards;
+    }
+    p:nth-of-type(3) {
+        animation: fadeInLeftBig 2s ease-in forwards;
+    }
+    p:last-of-type {
+        animation: fadeInLeftBig 2.5s ease-in forwards;
+    }
 }
 
 
@@ -47,5 +60,19 @@
             font-size: 60px;
             line-height: 80px;   
         }
+    }
+}
+
+@keyframes fadeInLeftBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-2000px, 0, 0);
+      transform: translate3d(-2000px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
 }
