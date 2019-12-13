@@ -56,6 +56,11 @@
             .links {
                 margin-bottom: 2em;
 
+                p {
+                    text-align: center;
+                    font-size: var(--fs-sm);
+                }
+
                 a.btn {
                     display: block;
                     max-width: 50%;

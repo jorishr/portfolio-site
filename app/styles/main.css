@@ -282,6 +282,11 @@ header nav li a:focus {
   margin-bottom: 2em;
 }
 
+.projects-section .project-container .legend-container .links p {
+  text-align: center;
+  font-size: var(--fs-sm);
+}
+
 .projects-section .project-container .legend-container .links a.btn {
   display: block;
   max-width: 50%;
@@ -557,6 +562,11 @@ header nav li a:focus {
 
 .projects-section .project-container .legend-container .links {
   margin-bottom: 2em;
+}
+
+.projects-section .project-container .legend-container .links p {
+  text-align: center;
+  font-size: var(--fs-sm);
 }
 
 .projects-section .project-container .legend-container .links a.btn {
