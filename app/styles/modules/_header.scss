@@ -7,6 +7,10 @@ header {
 
         i {
             color: var(--textColor-light);
+
+            &.hidden {
+                display: none;
+            }
         }
 
         .logo {
@@ -35,10 +39,13 @@ header {
         }
     }
 
-    nav {       
-        
+    nav {
+        transition: transform .3s ease-out;
+        transform: scale(1, 1);
+        transform-origin: right;
+
         &.hidden {
-            display: none;
+            transform: scale(0, 1);
         }
         
         position: absolute;
@@ -78,6 +85,10 @@ header {
 
         nav {
             position: static;
+
+            &.hidden {
+                transform: scale(1, 1);
+            }
     
             li {
                 display: inline-block;
