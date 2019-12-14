@@ -4,13 +4,15 @@ const   {src, dest, parallel, series}  = require('gulp'),
         htmlMin      = require('gulp-htmlmin'),
         postcss      = require('gulp-postcss'),
         autoprefixer = require('autoprefixer'),
+        terser       = require('gulp-terser'),
         del          = require('del');
 
 const   baseDir     = './app',
         distDir     = './dist',
         htmlFiles   = baseDir + '/*.html',
         imgFiles    = baseDir + '/images/*',
-        cssFiles    = baseDir + '/styles/*.css';
+        cssFiles    = baseDir + '/styles/*.css',
+        jsFiles     = baseDir + '/scripts/*.js';
 
 function startClean(){
     return del('./dist');
@@ -42,4 +44,10 @@ function cssBuild(){
         .pipe(dest(distDir + '/styles'))
 };
 
-exports.build = series(startClean, parallel(cssBuild, minifyHtml, optimizeImages));
+
+function jsBuild() {
+    return src(jsFiles)
+    .pipe(terser())
+    .pipe(dest(distDir + '/scripts'))
+}
+exports.build = series(startClean, parallel(cssBuild, minifyHtml, optimizeImages, jsBuild));
