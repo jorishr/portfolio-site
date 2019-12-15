@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -290,6 +294,13 @@ header nav li a:focus {
   -webkit-box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
   padding: var(--pd-sm) var(--pd-sm);
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+.projects-section .project-container.reveal {
+  opacity: 1;
 }
 
 .projects-section .project-container .image-container {
@@ -572,6 +583,13 @@ header nav li a:focus {
   -webkit-box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
   padding: var(--pd-sm) var(--pd-sm);
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+.projects-section .project-container.reveal {
+  opacity: 1;
 }
 
 .projects-section .project-container .image-container {
@@ -708,6 +726,13 @@ section#skills {
   grid-gap: 2em;
   margin-bottom: 4em;
   text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out .5s;
+  transition: opacity ease-in-out .5s;
+}
+
+.skills.reveal {
+  opacity: 1;
 }
 
 .skills .card h3 {
