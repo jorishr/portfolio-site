@@ -24,10 +24,8 @@ const appearOnScroll = new IntersectionObserver(function(
             entries.forEach(entry => {
                 if(!entry.isIntersecting){ return; }
                 else {
-                    console.log(entry.target.classList)
                     entry.target.classList.add('reveal');
                     appearOnScroll.unobserve(entry.target);
-                    console.log(entry.target.classList)
                 }
             })	
         },	
