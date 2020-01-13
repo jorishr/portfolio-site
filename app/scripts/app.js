@@ -2,7 +2,6 @@ const toggle        = document.querySelector('.toggle');
 const nav           = document.querySelector('nav'); 
 const toggleIcons   = document.querySelectorAll('header i');
 const faders        = document.querySelectorAll('.fade-in');
-const sliders       = document.querySelectorAll('.slide-in');
 
 //hamburger menu toggle
 toggle.addEventListener('click', function(){    

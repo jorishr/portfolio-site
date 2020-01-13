@@ -25,5 +25,8 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "lozad": "^1.14.0"
   }
 }
