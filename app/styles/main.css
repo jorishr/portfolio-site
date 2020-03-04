@@ -66,6 +66,19 @@ a.btn {
   border-radius: 2px;
 }
 
+noscript::before {
+  content: 'Turn on your Javascript or use a Javascript compatible browser.';
+  font-size: var(--ff-lg);
+  color: var(--bgColor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: var(--pd-sm) var(--pd-lg);
+  background-color: var(--accent);
+}
+
 header .header-container {
   position: relative;
   display: -webkit-box;
