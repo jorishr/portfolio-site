@@ -802,8 +802,8 @@ section#skills {
 
 .scroll-indicator {
   position: fixed;
-  right: 2em;
-  bottom: 2em;
+  right: .5em;
+  bottom: .5em;
   border-radius: 50%;
   overflow: hidden;
   -webkit-box-shadow: 3px 3px 10px -5px grey, -3px 0px 10px -5px grey;
@@ -822,7 +822,7 @@ section#skills {
 }
 
 .scroll-indicator__arrow {
-  height: 20px;
+  height: 15px;
   z-index: 1;
   fill: var(--textColor-base);
 }
@@ -835,6 +835,16 @@ section#skills {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-indicator {
+    right: 2em;
+    bottom: 2em;
+  }
+  .scroll-indicator__arrow {
+    height: 20px;
+  }
 }
 
 footer {

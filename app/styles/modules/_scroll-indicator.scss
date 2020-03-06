@@ -1,7 +1,7 @@
 .scroll-indicator {
     position: fixed;
-    right: 2em;
-    bottom: 2em;
+    right: .5em;
+    bottom: .5em;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 
@@ -20,7 +20,7 @@
     }
 
     &__arrow {
-        height: 20px;
+        height: 15px;
         z-index: 1;
         fill: var(--textColor-base);
     }
@@ -33,5 +33,14 @@
         position: absolute;
         bottom: 0;
         left: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        right: 2em;
+        bottom: 2em;
+        
+        &__arrow {
+            height: 20px;    
+        }
     }
 }
