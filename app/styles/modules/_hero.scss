@@ -1,7 +1,11 @@
 .hero-section {
-    padding: var(--pd-lg);
-    padding-bottom: .5em;
-    margin-bottom: 8em;
+    padding: var(--pd-base);
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        padding-bottom: var(--pd-lg);
+    }
 
     h1, h2 {
         margin-bottom: .5em;
@@ -17,6 +21,7 @@
         font-size: var(--fs-sm);
         font-weight: 400;
         color: var(--textColor-light);
+        margin-bottom: 1.5em;
     }
 
     p {
@@ -46,6 +51,11 @@
 @media screen and (min-width: 768px){
 
     .hero-section {
+
+        &__text {
+            padding-bottom: var(--pd-base);
+        }
+    
     
         h1 {
             font-size: var(--fs-md);

@@ -13,36 +13,42 @@
     <script src="https://kit.fontawesome.com/49d7940b9d.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="scripts/app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
     <noscript></noscript>
-    <header>
-        <div class="header-container wrapper">
-            <div class="logo">
-                <p>Portofolio <span>.</span></p>
-                <hr>
+    <div class="landing">
+        <header>
+            <div class="header-container wrapper">
+                <div class="logo">
+                    <p>Portofolio <span>.</span></p>
+                    <hr>
+                </div>
+                <nav class="hidden">
+                    <ul>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#footer">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="toggle">
+                    <i class="fas fa-bars fa-2x"></i>
+                    <i class="hidden fas fa-times fa-2x"></i>
+                </div>
             </div>
-            <nav class="hidden">
-                <ul>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#footer">contact</a></li>
-                </ul>
-            </nav>
-            <div class="toggle">
-                <i class="fas fa-bars fa-2x"></i>
-                <i class="hidden fas fa-times fa-2x"></i>
+        </header>
+        <div class="hero-section wrapper">
+            <div class="hero-section__text">
+                <p>Hola<span>!</span></p>
+                <p>I'm Belgian</p>
+                <p>I'm based in Barcelona</p>
+                <p>I build complete web apps</p>
             </div>
+            <div class="hero-section__titles">
+                <h1>Joris Raymaekers</h1>
+                <h2>full stack developer</h2>
+            </div>    
         </div>
-    </header>
-    <div class="hero-section wrapper">
-        <h1>Joris Raymaekers</h1>
-        <h2>full stack developer</h2>
-        <p>Hola<span>!</span></p>
-        <p>I'm Belgian</p>
-        <p>I'm based in Barcelona</p>
-        <p>I build complete web apps</p>
     </div>
     <section id="projects" class="projects-section wrapper">
         <h2>My Projects <span>.</span></h2>

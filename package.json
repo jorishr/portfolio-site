@@ -4,6 +4,7 @@
   "description": "Portofolio site Joris Raymaekers",
   "main": "index.html",
   "scripts": {
+    "start": "npx parcel app/index.html",
     "build": "npx gulp build"
   },
   "repository": {
@@ -17,16 +18,18 @@
   },
   "homepage": "https://github.com/jorishr/portofolio-site#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.8.4",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-terser": "^1.2.0"
+    "gulp-terser": "^1.2.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.9"
   },
   "dependencies": {
-    "lozad": "^1.14.0"
+    "lozad": "^1.15.0"
   }
 }
