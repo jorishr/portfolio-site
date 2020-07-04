@@ -38,7 +38,7 @@ faders.forEach(fader => {
 })
 
 //add or remove scrollindicator; fill bg color based on scroll height
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', throttle(()=>{
     let windowHeight = Math.max(
         document.body.scrollHeight,
         document.documentElement.scrollHeight,
@@ -48,23 +48,40 @@ window.addEventListener('scroll', ()=>{
         document.documentElement.clientHeight
     );
     let currentScroll = window.pageYOffset;  
-    let scrollHeightPercent = Math.ceil((currentScroll / windowHeight) * 100) + 6; 
+    let scrollHeightPercent = Math.ceil((currentScroll / windowHeight) * 100 + 6); 
     //console.log(scrollHeightPercent);
     if(scrollHeightPercent >= 10){
         scrollIndicator.classList.add('reveal');
-        //throttling the 'filling' of the scrollindicator bg color
-        setTimeout(() => {
-            scrollIndicatorBg.style.height = `${scrollHeightPercent}%`; 
-            //console.log(scrollIndicatorBg.style.height)
-        }, 300);
+        scrollIndicatorBg.style.height = `${scrollHeightPercent}%`; 
+        //console.log(scrollIndicatorBg.style.height)
     } else {
         scrollIndicator.classList.remove('reveal');
     }
-})
+}, 50))
 
 //click scroll to top
 scrollIndicator.addEventListener('click', () => {
     window.scrollTo(0,0);
 })
 
+//throttle helper function
+function throttle(fn, delay){
+    let flag = true;
+    return function(){
+        let args = arguments;
+        let context = this;
+        if(flag){
+            fn.apply(context, args);
+            flag = false;
+            setTimeout(()=>{
+                flag = true;
+            }, delay);
+        }
+    }
+} 
+//adapt vh variable for mobile screen
+//get the viewport height and multiply by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+//set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 })();

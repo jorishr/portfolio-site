@@ -5,44 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Site description -->
+    <meta name="theme-color" content="rgba(26, 27, 31, .6)">
 	<meta name="description" content="Portofolio website by Joris Raymaekers. An overview of my web development projects and skills as a front-end and back-end developer.">
     <meta name="author" content="Joris Raymaekers">
     <meta property="og:image" content="https://jorisr.com/images/portofolio-video-min.gif"/>
     <title>Portofolio by Joris Raymaekers, full stack developer</title>
     <!-- Scripts and css -->
-    <script src="https://kit.fontawesome.com/49d7940b9d.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="scripts/app.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
     <noscript></noscript>
-    <header>
-        <div class="header-container wrapper">
-            <div class="logo">
-                <p>Portofolio <span>.</span></p>
-                <hr>
+    <div class="landing">
+        <header>
+            <div class="header-container wrapper">
+                <div class="logo">
+                    <p>Portofolio <span>.</span></p>
+                    <hr>
+                </div>
+                <nav class="hidden">
+                    <ul>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#skills-section">skills</a></li>
+                        <li><a href="#footer">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="toggle">
+                    <i class="fas fa-bars fa-2x"></i>
+                    <i class="hidden fas fa-times fa-2x"></i>
+                </div>
             </div>
-            <nav class="hidden">
-                <ul>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#footer">contact</a></li>
-                </ul>
-            </nav>
-            <div class="toggle">
-                <i class="fas fa-bars fa-2x"></i>
-                <i class="hidden fas fa-times fa-2x"></i>
+        </header>
+        <div class="hero-section wrapper">
+            <div class="hero-section__text">
+                <p>Hola<span>!</span></p>
+                <p>I'm Belgian</p>
+                <p>I'm based in Barcelona</p>
+                <p>I build complete web apps</p>
             </div>
+            <div class="hero-section__titles">
+                <h1>Joris Raymaekers</h1>
+                <h2>full stack developer</h2>
+            </div>    
         </div>
-    </header>
-    <div class="hero-section wrapper">
-        <h1>Joris Raymaekers</h1>
-        <h2>full stack developer</h2>
-        <p>Hola<span>!</span></p>
-        <p>I'm Belgian</p>
-        <p>I'm based in Barcelona</p>
-        <p>I build complete web apps</p>
     </div>
     <section id="projects" class="projects-section wrapper">
         <h2>My Projects <span>.</span></h2>
@@ -80,7 +85,7 @@
                         <p>Models: users, campgrounds, comments with user data association</p>
                     </li>
                     <li>
-                        <p>User authentication: PassportJS Authentication</p>
+                        <p>User authentication: sessions with PassportJS</p>
                     </li>
                     <li>
                         <p>Password reset with email confirmation (Mailgun API)</p>
@@ -134,7 +139,7 @@
             <div class="legend-container">
                 <div class="titles">
                     <h3>Travel Site</h3>
-                    <h4>Fully responsive front-end website built to practice with SASS/JS file architecture, BEM naming conventions, icon sprites, Gulp, Webpack and the deployment process.</h4>
+                    <h4>Fully responsive front-end website</h4>
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://travel-site.jorisr.com">live website</a>
@@ -146,13 +151,19 @@
                 <h5>(complete list in github readme)</h5>
                 <ul>
                     <li>
-                        <p>JS/JQUERY: sticky header on scroll, animated hamburger menu, full screen modal, reveal elements on scroll (Waypoints), lazy loading images (LazySizes), smooth scrolling to page section</p>
+                        <p>Sticky header on scroll, reveal elements on scroll and smooth scrolling to page section</p>
                     </li>
                     <li>
-                        <p>CSS: column layout with floats and flexbox</p>
+                        <p>Full screen modal</p>
                     </li>
                     <li>
-                        <p>HTML: responsive images with data-srcset attributes</p>
+                        <p>Responsive images with data-srcset attributes and lazy loading</p>
+                    </li>
+                    <li>
+                        <p>Column layout with floats and flexbox</p>
+                    </li>
+                    <li>
+                        <p>Development tools: BEM naming convention, icon sprites, Gulp taskrunner, Webpack for managing Javascript and jQuery bundles.</p>
                     </li>
                 </ul>
             </div>
@@ -164,8 +175,8 @@
             </div>
             <div class="legend-container">
                 <div class="titles">
-                    <h3>Todo App</h3>
-                    <h4>Single Page todo-app with custom JSON API</h4>
+                    <h3>Task Manager</h3>
+                    <h4>Single page task manager with custom JSON API</h4>
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://todo-app.jorisr.com">live website</a>
@@ -177,13 +188,13 @@
                 <h5>(complete list in github readme)</h5>
                 <ul>
                     <li>
-                        <p>controller: Nodejs (Express), model: MongoDb & Mongoose</p>
+                        <p>Built with NodeJs, Express & MongoDb.</p>
                     </li>
                     <li>
-                        <p>AJAX with jQUERY</p>
+                        <p>AJAX requests with jQuery</p>
                     </li>
                     <li>
-                        <p>taskrunner: gulp (nodemon+browserSync; minification, autoprefixer, babel)</p>
+                        <p>Development tools: Gulp taskrunner with Nodemon and BrowserSync.</p>
                     </li>
                 </ul>
             </div>
@@ -196,7 +207,7 @@
             <div class="legend-container">
                 <div class="titles">
                     <h3>Cooking React</h3>
-                    <h4>Basic front-end react app for recipes</h4>
+                    <h4>Recipe list manager built with React</h4>
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://cooking-react.jorisr.com">live website</a>
@@ -208,10 +219,10 @@
                 <h5>(complete list in github readme)</h5>
                 <ul>
                     <li>
-                        <p>Create react-app in Nodejs with localStorage</p>
+                        <p>Recipes can be searched, added, edited and deleted</p>
                     </li>
                     <li>
-                        <p>Recipes can be searched/added/edited/deleted</p>
+                        <p>Recipes are stored in local storage</p>
                     </li>
                     <li>
                         <p>The changes made in the edit section immediately show up in the recipe list section</p>
@@ -219,26 +230,36 @@
                 </ul>
             </div>
         </div>
-        <!-- Codpen Highlight-->
+        <!-- Codepen Highlight-->
         <div class="project-container fade-in">
             <div class="highlights">
-                <h2>Codepen Highlights <span>.</span></h2>
-                <h3>Check out my profile on CODEPEN for front-end and javascript mini-projects</h3>
-                <h3>Collections include: form validation, AJAX with Axios, filtering DOM elements, unit testing and css animations</h3>
+                <h2 class="highlights__heading">Codepen Highlights <span>.</span></h2>
+                <h3>Check out my profile on CODEPEN for front-end mini-projects</h3>
+                <h3>Collections include: forms with client side validation, image galleries with DOM element filtering, modals and css animations</h3>
             </div>
             <div class="codepen-container">
-                <img src="images/codepen.PNG" alt="Screenshot of codepen profile page">
+                <img src="images/codepen.png" alt="Screenshot of codepen profile page">
                 <div class="overlay">
-                    <a class="btn" href="https://codepen.io/jorishr" target="_blank" >visit my profile</a>
                 </div>
+                <a class="btn" href="https://codepen.io/jorishr" target="_blank" >visit my profile</a>
             </div>
         </div>
         <!-- Github Highlight-->
         <div class="project-container fade-in">
             <div class="highlights">
-                <h2>Github Highlights <span>.</span></h2>
-                <h3>Check out my code for some other interesting projects</h3>
+                <h2 class="highlights__heading">Github Highlights <span>.</span></h2>
+                <h3>Check out my Github profile for more interesting projects</h3>
                 <div class="cards">
+                    <div class="card">
+                        <h4>Web scraper</h4>
+                        <p>NodeJs app that scrapes the Google Search results page.</p>
+                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/search-web-scraper">code on github</a>
+                    </div>
+                    <div class="card">
+                        <h4>ExpressJs integration testing with Jest</h4>
+                        <p>Testing Express server route controllers with Jest</p>
+                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/express-integration-testing">code on github</a>
+                    </div>
                     <div class="card">
                         <h4>PWA Users</h4>
                         <p>Basic progressive web app with Google Workbox that fetches user data form the placeholder API.</p>
@@ -246,17 +267,46 @@
                     </div>
                     <div class="card">
                         <h4>Auth with JSON Web Tokens</h4>
-                        <p>Basic app with JWT authorization. There are three different servers: authServer handles authorization, the other two are for API related requests.</p>
+                        <p>Basic app with JWT authorization for three different servers: the authServer handles authorization, the other two are for API related requests.</p>
                         <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on github</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Games Highlight-->
+        <div class="project-container fade-in">
+            <div class="highlights">
+                <h2 class="highlights__heading">Fun zone<span>.</span></h2>
+                <h3>Check out some of the mini-games I created</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Guess the flag</h4>
+                        <p>The player is presented a random country and 4 possible answers</p>
+                        <p>Game state management built with React</p>
+                        <img src="images/guess_the_flag.png" alt="Screenshot of the game: Guess the flag">
+                        <div class="card__btn-group">
+                            <a class="btn" target="_blank" href="http://guess-the-flag.jorisr.com">play the game</a>
+                            <a class="btn" target="_blank" href="http://www.github.com/jorishr/guess-the-flag">code on github</a>
+                        </div>
+                    </div>                 
+                    <div class="card">
+                        <h4>Patatap Clone</h4>
+                        <p>Each keystroke produces a fireworks of sounds and colors</p>
+                        <p>Built with the libraries Paper.js and Howler.js</p>
+                        <img src="images/patatap.jpg" alt="Screenshot of the game: Patatap">
+                        <div class="card__btn-group">
+                            <a class="btn" target="_blank" href="http://patatap.jorisr.com">play the game</a>
+                            <a class="btn" target="_blank" href="http://www.github.com/jorishr/patatap-clone">code on github</a>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
     </section>
     <!-- skills section -->
-    <section id="skills" class="projects-section wrapper">
+    <section id="skills-section" class="projects-section wrapper">
         <h2>My Skills <span>.</span></h2>
-        <p class="skills-subtitle">The projects above are a good reflection of what I can do for you but to sum it all up here is a list of my skills:</p>
+        <p id="skills-section__subtitle">The projects above are a good reflection of what I can do for you but to sum it all up here is a list of my skills:</p>
         <div class="skills fade-in">
             <div class="card">
                 <h3>Front-end</h3>
@@ -266,61 +316,47 @@
                 <p>jQuery, React (hooks)</p> 
                 <p>Build tools: Gulp, Webpack, Parcel</p>
                 <p>Prototyping in AdobeXd</p>
-                <p>Basic image editing (GIMP)</p>
             </div>
             <div class="card">
                 <h3>Back-end</h3>
-                <p>NodeJs, Express,</p>
-                <p>AJAX (Fetch API, Axios), REST API's,</p>
-                <p>JWT, PassportJs,</p>
-                <p>MongoDb, MySQL</p>
-                <p>Deployment: VPS (Ubuntu, Nginx), Netlify</p>
+                <p>NodeJs, ExpressJs</p>
+                <p>REST API's, AJAX</p>
+                <p>Autentication: sessions (PassportJs), JWT</p>
+                <p>MongoDb (Mongoose), MySQL</p>
+                <p>Linux CLI</p>
+                <p>Deployment: VPS (Ubuntu, Nginx, PM2, SSH)</p>
                 <p>Domain setup and management</p>
-                <p>SSH</p>
             </div>
             <div class="card">
                 <h3>Teamwork</h3>
                 <p>Source control: Git, Github</p>
-                <p>SCRUM, Agile</p>
-                <p>Trello</p>
-            </div>
-            <div class="card">
-                <h3>Other</h3>
-                <p>Linux CLI</p>
-                <p>Wordpress management</p>
+                <p>Knowledge of Agile development</p>
+                <p>Trello and Kanban based workflow</p>
                 <p>Polyglot with excellent communication and documentation skills</p>
             </div>
         </div>
-        <div class="extra">
-            <h3>I am a self-taught developer. Some material I used and recommend:</h3>
+        <div class="about">
+            <h3>About me</h3>
+            <p>My first experience with code dates back to a time when you had to know something about MS-DOS commands in order to play simple video games on a PC. Since then I went on to explore other horizons and I hold a Masters degree in International Relations. However, through some professional projects that involved Wordpress management and customization I rediscovered my interest for technology and software development. In early 2019 I decided to start learning the web stack and to gradually transition into a career as a developer.
+            </p>
+            <h3>Tools and resources I use and recommend</h3>
             <ul>
                 <li>
-                    <p>For most of my development I rely on a windows machine with <em>Visual Studio Code</em> and <em>Git Bash</em>. I'd also been working with <em>Linux Mint</em> for a couple of years prior to learning web development and that is a good way to get familiar with the command line and Ubuntu-based servers.</p>
+                    <p>For most of my development I rely on a windows machine with <em>Visual Studio Code</em> and <em>Git Bash</em>. The linux flavor I use on my secondary machine is <em>Linux Mint</em>
+                    </p>
                 </li>
                 <li>
-                    <p>My go-to hosting providers are <a href="https://m.do.co/c/4e43e4ab229b">Digital Ocean (VPS)</a> and <a href="https://www.versio.nl/?pa=116081zmtjs" target="_blank">Versio (Wordpress)</a>, plus <a href="https://netlify.com" target="_blank">Netlify</a> for automated deployment of front-end apps.</p>
+                    <p>My go-to hosting providers are <a href="https://m.do.co/c/4e43e4ab229b">Digital Ocean (VPS)</a> and <a href="https://www.versio.nl/?pa=116081zmtjs" target="_blank">Versio</a>.</p>
                 </li>                
                 <li>
-                    <p>Learn Javascript with the open source <a href="https://javascript.info/" target="_blank">Modern Javascript Tutorial</a> and the book written by Marijn Haverbeke: <a target="_blank" href="https://eloquentjavascript.net/">Eloquent Javascript: A modern introduction to programming</a></p>
+                    <p>For learning Javascript I recommend the open source <a href="https://javascript.info/" target="_blank">Modern Javascript Tutorial</a> and the book written by Marijn Haverbeke: <a target="_blank" href="https://eloquentjavascript.net/">Eloquent Javascript: A modern introduction to programming</a>.</p>
                 </li>
                 <li>
-                    <p>Udemy courses: 'The Web Developer Bootcamp' and 'The Advanced Web Development Bootcamp' by Colt Steele. Some of the material may be outdated but dealing with outdated packages and unexpected errors without the help of an instructor is a good learning experience.</p>
-                </li>
-                <li>
-                    <p>Learning React: see official docs <a target="_blank" href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React</a> and <a target="_blank" href="https://webdevsimplified.com">Web Dev Simplified</a> by Kyle Cook</p>
-                </li>
-                <li>
-                    <p>For problem solving, inspiration and references use 
-
-                        <a target="_blank" href="http://stackoverflow.com">stack overflow</a>,
-                        <a target="_blank" href="http://css-tricks.com">css-tricks.com</a> and
-                        <a target="_blank" href="https://developer.mozilla.org">Mozilla Developers Network(MDN)</a>. 
-                        Discover front-end design tricks on youtube with
+                    <p>To discover new front-end design tricks I follow the Youtube channels of 
                         <a target="_blank" href="https://www.youtube.com/user/DesignCourse">Gary Simon (Coursera)</a> and
                         <a target="_blank" href="https://www.youtube.com/user/KepowOb">Kevin Powell</a>. 
-                        For computer science related video's see <a target="_blank" href="https://www.youtube.com/user/Computerphile">Computerphile</a>.
-                        <a target="_blank" href="https://www.youtube.com/channel/UCrUL8K81R4VBzm-KOYwrcxQ">Engineer Man</a> also has excellent back-end and general programming video's. Finally,
-                        <a target="_blank" href="https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ">Coding Tech</a> will keep you up-to-date with tech conferences from all around the world.
+                        For computer science related video's I highly recommend the <a target="_blank" href="https://www.youtube.com/user/Computerphile">Computerphile</a> channel.
+                        <a target="_blank" href="https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ">Coding Tech</a> is a channel that will keep you up-to-date with tech conferences from all around the world.
                     </p>
                 </li>
             </ul>
@@ -347,6 +383,7 @@
                 <a href="skype:joris.raymaekers?call"><i class="fab fa-skype fa-2x"></i>Skype Call</a>
                 <a target="_blank" href="http://www.linkedin.com/in/joris-raymaekers/"><i class="fab fa-linkedin-in fa-2x"></i>LinkedIn</a>
                 <a target="_blank" href="http://www.github.com/jorishr"><i class="fas fa-code-branch fa-2x"></i>Github</a>
+                <a target="_blank" href="http://www.codepen.io/jorishr"><i class="fab fa-codepen fa-2x"></i>Codepen</a>
             </div>
         </div>
         <div class="copyright">
