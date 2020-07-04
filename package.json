@@ -4,8 +4,7 @@
   "description": "Portofolio site Joris Raymaekers",
   "main": "index.html",
   "scripts": {
-    "start": "npx parcel app/index.html",
-    "build": "npx gulp build"
+    "start": "npx parcel app/index.html"
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,8 @@
     "gulp-postcss": "^8.0.0",
     "gulp-terser": "^1.2.0",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.9"
+    "sass": "^1.26.9",
+    "@fortawesome/fontawesome-free": "^5.13.1"
   },
   "dependencies": {
     "lozad": "^1.15.0"

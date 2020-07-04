@@ -1,4 +1,9 @@
+@import './modules/fonts';
 @import './modules/global';
+@import "./modules/fontawesome/fontawesome.scss";
+@import "./modules/fontawesome/solid.scss";
+@import "./modules/fontawesome/brands.scss";
+@import "./modules/fontawesome/regular.scss";
 @import './modules/header';
 @import './modules/hero';
 @import './modules/projects';

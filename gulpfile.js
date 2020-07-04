@@ -63,6 +63,7 @@ function jsBuild() {
     .pipe(terser())
     .pipe(dest(distDir + '/scripts'))
 }
+//since Parcel is added to the project, the build task in now obsolete
 exports.build = series(
     startClean, 
     parallel(
