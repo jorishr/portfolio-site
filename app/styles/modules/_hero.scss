@@ -1,3 +1,8 @@
+.landing {
+    //see app.js: custom variabel set to offset menu on mobile
+    height: calc(var(--vh, 1vh) * 100);
+}
+
 .hero-section {
     padding: var(--pd-base);
     display: flex;

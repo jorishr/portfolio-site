@@ -84,8 +84,3 @@ noscript::before {
     padding: var(--pd-sm) var(--pd-lg);
     background-color: var(--accent);
 }
-
-.landing {
-    //see app.js: custom variabel set to offset menu on mobile
-    height: calc(var(--vh, 1vh) * 100);
-}
