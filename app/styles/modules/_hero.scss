@@ -1,15 +1,18 @@
-.landing {
-    //see app.js: custom variabel set to offset menu on mobile
-    height: calc(var(--vh, 1vh) * 100);
-}
-
 .hero-section {
+    //see app.js, height is set through js to get innerHeight of window
+
     padding: var(--pd-base);
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 
     &__text {
-        padding-bottom: var(--pd-lg);
+        margin-top: var(--pd-lg);
+        padding-bottom: var(--pd-md);
+    }
+
+    &__titles {
+        padding-bottom: var(--pd-sm);
     }
 
     h1, h2 {
@@ -60,8 +63,7 @@
         &__text {
             padding-bottom: var(--pd-base);
         }
-    
-    
+          
         h1 {
             font-size: var(--fs-md);
         }

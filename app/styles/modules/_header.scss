@@ -1,40 +1,29 @@
 header {
+    position: absolute;
+    width: 100%;    
+    
     .header-container {
         position: relative;
         display: flex;
         justify-content: space-between;
         padding: var(--pd-base);
 
+        .logo {
+            max-width: 40vw;
+            max-height: 10vh;
+            overflow: hidden;
+
+            svg {
+                width: 10em;
+                height: 4em;
+            }
+        }
+
         i {
             color: var(--textColor-light);
 
             &.hidden {
                 display: none;
-            }
-        }
-
-        .logo {
-            width: 135px;
-            font-weight: 400;
-            font-size: var(--fs-lg);
-    
-            hr {
-                width: 135px;
-                height: 3px;
-                background-color: var(--textColor-base);
-            }
-    
-            p {
-                position: relative;
-                display: inline-block;
-                
-                span {
-                    color: rgb(151, 0, 0);
-                    font-size: 50px;
-                    position: absolute;
-                    top: -32px;
-                    right: -15px;
-                }
             }
         }
     }
@@ -46,6 +35,7 @@ header {
 
         &.hidden {
             transform: scale(0, 1);
+            display: none;
         }
         
         position: absolute;
@@ -83,7 +73,7 @@ header {
     }       
 
     @media screen and (min-width:768px){
-        
+            
         .toggle {
             display: none;
         }
@@ -93,6 +83,7 @@ header {
 
             &.hidden {
                 transform: scale(1, 1);
+                display: block;
             }
     
             li {

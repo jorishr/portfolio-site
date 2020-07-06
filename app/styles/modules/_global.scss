@@ -17,6 +17,7 @@
 
     --pd-base: 2em;
     --pd-sm: 1em;
+    --pd-md: 2.5em;
     --pd-lg: 4em;
 
     //$fa-font-path: "/fontawesome/webfonts";
@@ -28,7 +29,7 @@
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {

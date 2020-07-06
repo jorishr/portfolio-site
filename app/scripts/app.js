@@ -79,9 +79,9 @@ function throttle(fn, delay){
         }
     }
 } 
-//adapt vh variable for mobile screen
-//get the viewport height and multiply by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-//set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+//set height for first site section, accounts for mobile browser menu's
+//get the viewport innerHeight 
+let vh = window.innerHeight;
+const landing = document.querySelector('.hero-section');
+landing.style.height = `${vh}px`;
 })();
