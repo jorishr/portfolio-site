@@ -84,4 +84,24 @@ function throttle(fn, delay){
 let vh = window.innerHeight - 135;  //header height
 const landing = document.querySelector('.hero-section');
 landing.style.height = `${vh}px`;
+
+//Easter egg code
+const pressed = []
+const target = 'bola';
+window.addEventListener('keyup', function(e){
+    pressed.push(e.key)
+    pressed.splice(-target.length - 1, pressed.length - target.length);
+    if(pressed.join('') === target){
+        displayLogo();
+    }
+})
+
+function displayLogo(){
+    const easterEgg = document.querySelector('.easter-egg')
+    easterEgg.classList.add('visible');
+    setTimeout(() => {
+        easterEgg.classList.remove('visible');
+    }, 2500);
+}
+
 })();
