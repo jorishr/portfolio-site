@@ -81,7 +81,7 @@ function throttle(fn, delay){
 } 
 //set height for first site section, accounts for mobile browser menu's
 //get the viewport innerHeight 
-let vh = window.innerHeight;
+let vh = window.innerHeight - 135;  //header height
 const landing = document.querySelector('.hero-section');
 landing.style.height = `${vh}px`;
 })();

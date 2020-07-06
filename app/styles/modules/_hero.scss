@@ -1,13 +1,12 @@
 .hero-section {
-    //see app.js, height is set through js to get innerHeight of window
+    //see app.js, height is set through js to get innerHeight of window - header
 
-    padding: var(--pd-base);
+    padding: 0 var(--pd-base) var(--pd-base) var(--pd-base);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     &__text {
-        margin-top: var(--pd-lg);
         padding-bottom: var(--pd-md);
     }
 
