@@ -85,3 +85,17 @@ noscript::before {
     padding: var(--pd-sm) var(--pd-lg);
     background-color: var(--accent);
 }
+
+.easter-egg {
+    display: none;
+
+    &.visible {
+        display: block;
+        position: sticky;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+        z-index: 20;
+    }
+}

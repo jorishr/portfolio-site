@@ -1,1 +1,3 @@
 Sitemap: https://jorisr.com/sitemap.xml
+User-agent: *
+Disallow: /club_brugge_kv_logo.svg

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Site description -->
     <meta name="theme-color" content="rgba(26, 27, 31, .6)">
-	<meta name="description" content="Portofolio website by Joris Raymaekers. An overview of my web development projects and skills as a front-end and back-end developer.">
+	<meta name="description" content="Portofolio website by Joris Raymaekers. An overview of my web development projects and skills as a full stack developer.">
     <meta name="author" content="Joris Raymaekers">
     <meta property="og:image" content="https://jorisr.com/images/portofolio-video-min.gif"/>
     <title>Portofolio by Joris Raymaekers, full stack developer</title>
@@ -16,8 +16,11 @@
 </head>
 <body>
     <noscript></noscript>
+    <div class="easter-egg">
+        <img src="images/club_brugge_kv_logo.svg" alt="Club Brugge">
+    </div>
     <header>
-        <div class="header-container wrapper">
+        <div class="header-container wrapper showScrollIndicator">
             <div class="logo">
                 <svg id="header_logo" xmlns="http://www.w3.org/2000/svg">
                     <text id="Portofolio" fill="#1a1b1f" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="19">Portofolio</tspan></text>
@@ -31,7 +34,7 @@
             <nav class="hidden">
                 <ul>
                     <li><a href="#projects">projects</a></li>
-                    <li><a href="#skills-section">skills</a></li>
+                    <li><a href="#skills-section">about me</a></li>
                     <li><a href="#footer">contact</a></li>
                 </ul>
             </nav>
@@ -121,7 +124,7 @@
                 <h5>(complete list in github readme)</h5>
                 <ul>
                     <li>
-                        <p>Full project: from design in adobeXD, build in NodeJS (Express) to deployment on private server</p>
+                        <p>Full project: from design in AdobeXD, build in NodeJS (Express) to deployment on private server</p>
                     </li>
                     <li>
                         <p>Compliance: age consent modal on page load, GDPR compliant forms</p>
@@ -167,7 +170,7 @@
                         <p>Column layout with floats and flexbox</p>
                     </li>
                     <li>
-                        <p>Development tools: BEM naming convention, icon sprites, Gulp taskrunner, Webpack for managing Javascript and jQuery bundles.</p>
+                        <p>Development tools: BEM naming convention, icon sprites, Gulp taskrunner, Webpack for managing Javascript and jQuery bundles</p>
                     </li>
                 </ul>
             </div>
@@ -192,13 +195,13 @@
                 <h5>(complete list in github readme)</h5>
                 <ul>
                     <li>
-                        <p>Built with NodeJs, Express & MongoDb.</p>
+                        <p>Built with NodeJs, Express & MongoDb</p>
                     </li>
                     <li>
                         <p>AJAX requests with jQuery</p>
                     </li>
                     <li>
-                        <p>Development tools: Gulp taskrunner with Nodemon and BrowserSync.</p>
+                        <p>Development tools: Gulp taskrunner with Nodemon and BrowserSync</p>
                     </li>
                 </ul>
             </div>
@@ -252,11 +255,11 @@
         <div class="project-container fade-in">
             <div class="highlights">
                 <h2 class="highlights__heading">Github Highlights <span>.</span></h2>
-                <h3>Check out my Github profile for more interesting projects</h3>
+                <h3>To see what my code looks like, explore some of my projects on Github</h3>
                 <div class="cards">
                     <div class="card">
                         <h4>Web scraper</h4>
-                        <p>NodeJs app that scrapes the Google Search results page.</p>
+                        <p>NodeJs app that scrapes the Google Search results page</p>
                         <a class="btn" target="_blank" href="http://www.github.com/jorishr/search-web-scraper">code on github</a>
                     </div>
                     <div class="card">
@@ -266,12 +269,12 @@
                     </div>
                     <div class="card">
                         <h4>PWA Users</h4>
-                        <p>Basic progressive web app with Google Workbox that fetches user data form the placeholder API.</p>
+                        <p>Basic progressive web app with Google Workbox that fetches user data form the placeholder API</p>
                         <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on github</a>
                     </div>
                     <div class="card">
                         <h4>Auth with JSON Web Tokens</h4>
-                        <p>Basic app with JWT authorization for three different servers: the authServer handles authorization, the other two are for API related requests.</p>
+                        <p>Basic app with JWT authorization for three different servers: the authServer handles authorization, the other two are for API related requests</p>
                         <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on github</a>
                     </div>
                 </div>
@@ -281,11 +284,11 @@
         <div class="project-container fade-in">
             <div class="highlights">
                 <h2 class="highlights__heading">Fun zone<span>.</span></h2>
-                <h3>Check out some of the mini-games I created</h3>
+                <h3>Play some of the mini-games I created</h3>
                 <div class="cards">
                     <div class="card">
                         <h4>Guess the flag</h4>
-                        <p>The player is presented a random country and 4 possible answers</p>
+                        <p>The player is presented a random country flag and 4 possible answers</p>
                         <p>Game state management built with React</p>
                         <img src="images/guess_the_flag.png" alt="Screenshot of the game: Guess the flag">
                         <div class="card__btn-group">
@@ -295,7 +298,7 @@
                     </div>                 
                     <div class="card">
                         <h4>Patatap Clone</h4>
-                        <p>Each keystroke produces a fireworks of sounds and colors</p>
+                        <p>Each keystroke produces a fireworks of randomly generated sounds and colors</p>
                         <p>Built with the libraries Paper.js and Howler.js</p>
                         <img src="images/patatap.jpg" alt="Screenshot of the game: Patatap">
                         <div class="card__btn-group">
@@ -314,8 +317,8 @@
         <div class="skills fade-in">
             <div class="card">
                 <h3>Front-end</h3>
-                <p>HTML5, CSS3, SASS,</p>
-                <p>Bootstrap, Semantic UI,</p>
+                <p>HTML5, CSS3, SASS</p>
+                <p>Bootstrap, Semantic UI</p>
                 <p>Javascript ES6, TypeScript</p>
                 <p>jQuery, React (hooks)</p> 
                 <p>Build tools: Gulp, Webpack, Parcel</p>
@@ -327,8 +330,7 @@
                 <p>REST API's, AJAX</p>
                 <p>Autentication: sessions (PassportJs), JWT</p>
                 <p>MongoDb (Mongoose), MySQL</p>
-                <p>Linux CLI</p>
-                <p>Deployment: VPS (Ubuntu, Nginx, PM2, SSH)</p>
+                <p>Deployment: VPS (Ubuntu, Nginx, PM2, SSH), Linux CLI</p>
                 <p>Domain setup and management</p>
             </div>
             <div class="card">
@@ -341,12 +343,12 @@
         </div>
         <div class="about">
             <h3>About me</h3>
-            <p>My first experience with code dates back to a time when you had to know something about MS-DOS commands in order to play simple video games on a PC. Since then I went on to explore other horizons and I hold a Masters degree in International Relations. However, through some professional projects that involved Wordpress management and customization I rediscovered my interest for technology and software development. In early 2019 I decided to start learning the web stack and to gradually transition into a career as a developer.
+            <p>My first experience with code dates back to a time when you had to know something about MS-DOS commands in order to play simple video games on a PC. Since then I went on to explore other horizons and I hold a Masters degree in International Relations. However, through some professional projects that involved Wordpress management and customization I rediscovered my interest for technology and software development. In early 2019 I decided to start learning the web stack and to gradually transition into a career as a developer. Now I want you to hire me to help you build amazing web based tools that add value to your company and solve problems for your clients.
             </p>
             <h3>Tools and resources I use and recommend</h3>
             <ul>
                 <li>
-                    <p>For most of my development I rely on a windows machine with <em>Visual Studio Code</em> and <em>Git Bash</em>. The linux flavor I use on my secondary machine is <em>Linux Mint</em>
+                    <p>For most of my development I rely on a windows machine with <em>Visual Studio Code</em> and <em>Git Bash</em>. The linux flavor I use on my secondary machine is <em>Linux Mint</em>.
                     </p>
                 </li>
                 <li>
