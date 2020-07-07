@@ -34,7 +34,7 @@
         .image-container {
             order: 2;
             width: 100%;
-            padding: var(--pd-base);
+            padding: var(--pd-base) var(--pd-sm);
         }
 
         .legend-container {
@@ -124,6 +124,7 @@
             .image-container {
                 order: 2;
                 width: 70%;
+                padding: var(--pd-base);
             }
     
             .legend-container {

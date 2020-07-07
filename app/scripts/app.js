@@ -85,6 +85,11 @@ let vh = window.innerHeight - 135;  //header height
 const landing = document.querySelector('.hero-section');
 landing.style.height = `${vh}px`;
 
+window.addEventListener('resize', () => {
+    vh = window.innerHeight - 135;
+})
+
+
 //Easter egg code
 const pressed = []
 const target = 'bola';
