@@ -5,9 +5,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: hidden;
 
     &__text {
-        padding-bottom: var(--pd-md);
+        padding-bottom: var(--pd-base);
     }
 
     &__titles {
@@ -56,6 +57,32 @@
     p:last-of-type {
         animation: fadeInLeftBig 2.5s ease-in forwards;
     }
+
+    a#start {
+        margin: 0 auto;
+        display: block;
+        padding: var(--pd-xs) var(--pd-sm);
+        background-color: var(--bgColor-accent);
+        color: var(--textColor-base);
+        text-transform: none;
+        animation: popup 1s 4s ease-in forwards;
+        opacity: 0;
+        border: 2px solid var(--textColor-base);
+    
+        &:active, 
+        &:hover, 
+        &:focus {
+            background-color: var(--textColor-base);
+            color: var(--bgColor-accent);
+            border: 2px solid transparent;
+
+        } 
+
+        &.hide {
+            animation: fadeOut 1s 0s ease-in forwards;
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -77,6 +104,10 @@
         p {
             font-size: 60px;
             line-height: 80px;   
+        }
+
+        a.btn {
+            visibility: hidden;
         }
 
         &::after {
@@ -108,7 +139,7 @@
         &.hideScrollIndicator {
             
             &::after {
-                visibility: hidden;
+                animation: fadeOut 1s 0s ease-in forwards;
             }
         }
     }
@@ -143,6 +174,18 @@
     }
 }
 
+@keyframes popup {
+    from {
+      opacity: 0;
+      transform: scale(0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+}
+
 @keyframes moveArrow {
     0% {
         transform: translate(0, 0);
@@ -163,4 +206,9 @@
 @keyframes bottomUp {
     from {transform: scaleY(0);}
     to {transform: scaleY(1);}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }

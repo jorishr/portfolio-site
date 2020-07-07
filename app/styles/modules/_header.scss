@@ -1,11 +1,11 @@
 header {
-    height: 135px;
+    height: 100px;
     
     .header-container {
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding: var(--pd-base);
+        padding: var(--pd-base) var(--pd-base) var(--pd-sm) var(--pd-base);
 
         .logo {
             max-width: 40vw;

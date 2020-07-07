@@ -81,12 +81,12 @@ function throttle(fn, delay){
 } 
 //set height for first site section, accounts for mobile browser menu's
 //get the viewport innerHeight 
-let vh = window.innerHeight - 135;  //header height
+let vh = window.innerHeight - 100;  //header height
 const landing = document.querySelector('.hero-section');
 landing.style.height = `${vh}px`;
 
 window.addEventListener('resize', () => {
-    vh = window.innerHeight - 135;
+    vh = window.innerHeight - 100;
 })
 
 
@@ -109,8 +109,9 @@ function displayLogo(){
     }, 2500);
 }
 
-//remove hero section scroll animator
+//remove hero section scroll animator or start here btn on mobile
 window.addEventListener('scroll', () => {
     document.querySelector('.hero-section').classList.add('hideScrollIndicator');
+    document.querySelector('#start').classList.add('hide');
 }, { once: true })
 })();
