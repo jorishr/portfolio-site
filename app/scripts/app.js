@@ -104,4 +104,8 @@ function displayLogo(){
     }, 2500);
 }
 
+//remove hero section scroll animator
+window.addEventListener('scroll', () => {
+    document.querySelector('.hero-section').classList.add('hideScrollIndicator');
+}, { once: true })
 })();
