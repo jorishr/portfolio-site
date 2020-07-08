@@ -13,13 +13,14 @@ header {
             overflow: hidden;
 
             svg {
-                width: 10em;
-                height: 4em;
+                width: 6em;
             }
         }
 
         i {
             color: var(--textColor-light);
+            position: relative;
+            z-index: 20;
 
             &.hidden {
                 display: none;
@@ -28,42 +29,56 @@ header {
     }
 
     nav {
+        position: absolute;
+        top: 0;  
+        right: 0;  
+        left: 0;
+        z-index: 10;
+
+        background-color: var(--bgColor-accent);
+        opacity: 1;
         transition: transform .3s ease-out;
         transform: scale(1, 1);
         transform-origin: right;
 
         &.hidden {
             transform: scale(0, 1);
-            display: none;
         }
         
-        position: absolute;
-        top: 6em;  
-        right: 1em;  
-        z-index: 10;
-
-        li {
-            display: block;
-            margin-bottom: 2em;
-            text-align: right;
-
-            a {
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                font-size: var(--fs-sm);
-                transition: all .3s ease-in;
-                padding: var(--pd-sm);
-            }
-
-            a:hover {
-                color: var(--textColor-base);
-            }
+        ul {
+            padding: var(--pd-xl) 0 var(--pd-base) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
             
-            a:active,
-            a:focus {
-                font-weight: 700;
+            li {
+                display: block;
+                margin-bottom: 4em;
+                text-align: center;
+    
+                a.btn {
+                    text-transform: capitalize;
+                    font-size: var(--fs-base);
+                    transition: all .3s ease-in;
+                    
+                    color: var(--textColor-base);
+                    padding: var(--pd-xs) var(--pd-sm);
+                    border: 2px solid var(--textColor-base);
+                    background-color: var(--bgColor-accent);
+                }
+  
+                a:hover {
+                    color: var(--textColor-base);
+                }
+                
+                a:active,
+                a:focus {
+                    font-weight: 700;
+                }
             }
         }
+
 
     }
     
@@ -84,14 +99,29 @@ header {
                 transform: scale(1, 1);
                 display: block;
             }
+
+            ul {
+                flex-direction: row;
+                padding: 0;
+                
+                li {
+                    display: inline-block;
     
-            li {
-                display: inline-block;
+                    a.btn {
+                        border: none;
+                        color: var(--textColor-light);
+                        font-weight: 400;
+                        background-color: var(--bgColor);
+                        text-transform: none;
+                    }
+                }
+        
+                li + li {
+                    margin-left: 2em;
+                }
             }
+
     
-            li + li {
-                margin-left: 2em;
-            }
         }
     }
 }

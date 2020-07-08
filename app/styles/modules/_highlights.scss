@@ -44,6 +44,8 @@
                 margin-top: auto;
                 align-self: center;
                 transition: ease-in .3s transform;
+                padding: var(--pd-xs) var(--pd-sm);
+                border: 2px solid var(--textColor-base);
             }
 
             a.btn:hover {

@@ -1,6 +1,7 @@
 (() => {
 const toggle        = document.querySelector('.toggle');
 const nav           = document.querySelector('nav'); 
+const navBtns       = document.querySelectorAll('nav > ul > li > a.btn'); 
 const toggleIcons   = document.querySelectorAll('header i');
 const faders        = document.querySelectorAll('.fade-in');
 const scrollIndicator   = document.querySelector('.scroll-indicator');
@@ -11,6 +12,13 @@ toggle.addEventListener('click', function(){
     nav.classList.toggle('hidden');
     toggleIcons.forEach(icon => icon.classList.toggle('hidden'))
 });
+//close mobile menu upon section link click
+navBtns.forEach(btn => {
+    btn.addEventListener('click', function(){    
+        nav.classList.toggle('hidden');
+        toggleIcons.forEach(icon => icon.classList.toggle('hidden'));
+    });
+})
 
 //fade-in with intersection observer API
 const appearOptions = {
