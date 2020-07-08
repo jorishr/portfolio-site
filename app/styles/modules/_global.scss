@@ -16,9 +16,11 @@
     --fs-4xl: 2.25rem;
 
     --pd-base: 2em;
+    --pd-xs: .5em;
     --pd-sm: 1em;
     --pd-md: 2.5em;
     --pd-lg: 4em;
+    --pd-xl: 6em;
 
     //$fa-font-path: "/fontawesome/webfonts";
 }
@@ -43,6 +45,7 @@ a {
     text-decoration: none;
     color: var(--textColor-light);
     transition: all .3s ease-in;
+    letter-spacing: 1px;
 }
 
 ul {
@@ -65,12 +68,24 @@ p {
 }
 
 a.btn {
-    padding: var(--pd-sm);
+    padding: var(--pd-sm) var(--pd-base);
+
     background-color: var(--textColor-base);
     color: var(--bgColor-accent);
-    text-transform: uppercase;
+
     text-align: center;
+
     border-radius: 2px;
+    border: 2px solid var(--textColor-base);
+
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}
+
+a.btn + a.btn {
+    background-color: var(--bgColor-accent);
+    color: var(--textColor-base);
 }
 
 noscript::before {

@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Site description -->
     <meta name="theme-color" content="rgba(26, 27, 31, .6)">
-	<meta name="description" content="Portofolio website by Joris Raymaekers. An overview of my web development projects and skills as a full stack developer.">
+	<meta name="description" content="Portfolio website by Joris Raymaekers. An overview of my web development projects and skills as a full stack developer.">
     <meta name="author" content="Joris Raymaekers">
-    <meta property="og:image" content="https://jorisr.com/images/portofolio-video-min.gif"/>
-    <title>Portofolio by Joris Raymaekers, full stack developer</title>
+    <meta property="og:image" content="https://jorisr.com/images/portfolio-video-min.gif"/>
+    <title>Portfolio by Joris Raymaekers, full stack developer</title>
     <!-- Scripts and css -->
     <script defer type="text/javascript" src="scripts/app.js"></script>
     <link rel="stylesheet" href="styles/main.scss">
@@ -22,20 +22,20 @@
     <header>
         <div class="header-container wrapper showScrollIndicator">
             <div class="logo">
-                <svg id="header_logo" xmlns="http://www.w3.org/2000/svg">
-                    <text id="Portofolio" fill="#1a1b1f" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="19">Portofolio</tspan></text>
-                    <g id="Elipse_1" data-name="Elipse 1" transform="translate(103 15)" fill="#970000" stroke="#970000" stroke-width="1">
-                    <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
-                    <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+                <svg id="header_logo" data-name="Componente 14 – 1" xmlns="http://www.w3.org/2000/svg" width="95.5" height="31" viewBox="0 0 95.5 31">
+                    <text id="Portfolio" fill="#1a1b1f" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="19">Portfolio</tspan></text>
+                    <g id="Elipse_1" data-name="Elipse 1" transform="translate(90 15)" fill="#970000" stroke="#970000" stroke-width="1">
+                      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+                      <circle cx="2.5" cy="2.5" r="2" fill="none"/>
                     </g>
-                    <line id="Línea_1" data-name="Línea 1" x2="108" transform="translate(0.5 30.5)" fill="none" stroke="#1a1b1f" stroke-width="1"/>
+                    <line id="Línea_1" data-name="Línea 1" x2="95" transform="translate(0.5 30.5)" fill="none" stroke="#1a1b1f" stroke-width="1"/>
                 </svg>
             </div>
             <nav class="hidden">
                 <ul>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#skills-section">about me</a></li>
-                    <li><a href="#footer">contact</a></li>
+                    <li><a class="btn" href="#projects">Projects</a></li>
+                    <li><a class="btn" href="#skills-section">About me</a></li>
+                    <li><a class="btn" href="#footer">Contact</a></li>
                 </ul>
             </nav>
             <div class="toggle">
@@ -54,7 +54,8 @@
         <div class="hero-section__titles">
             <h1>Joris Raymaekers</h1>
             <h2>full stack developer</h2>
-        </div>    
+        </div>
+        <a id="start" class="btn "href="#projects">Start here</a>    
     </div>
     <section id="projects" class="projects-section wrapper">
         <h2>My Projects <span>.</span></h2>
@@ -72,7 +73,7 @@
                     <p>Try it</p>
                     <p>Guest - Guest123!</p>
                     <a class="btn" target="_blank" href="https://catacamp.jorisr.com">live website</a>
-                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/yelp-camp">github</a>
+                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/yelp-camp">code on Github</a>
                 </div>
             </div>
             <div class="features">
@@ -116,7 +117,7 @@
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://www.goudster.be">live website</a>
-                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/goudster">github</a>
+                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/goudster">code on Github</a>
                 </div>
             </div>
             <div class="features">
@@ -150,7 +151,7 @@
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://travel-site.jorisr.com">live website</a>
-                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/travel-site">github</a>
+                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/travel-site">code on Github</a>
                 </div>
             </div>
             <div class="features">
@@ -187,7 +188,7 @@
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://todo-app.jorisr.com">live website</a>
-                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/todo-app">github</a>
+                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/todo-app">code on Github</a>
                 </div>
             </div>
             <div class="features">
@@ -218,7 +219,7 @@
                 </div>
                 <div class="links">
                     <a class="btn" target="_blank" href="https://cooking-react.jorisr.com">live website</a>
-                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/cooking-react">github</a>
+                    <a class="btn" target="_blank" href="https://www.github.com/jorishr/cooking-react">code on Github</a>
                 </div>
             </div>
             <div class="features">
@@ -260,22 +261,22 @@
                     <div class="card">
                         <h4>Web scraper</h4>
                         <p>NodeJs app that scrapes the Google Search results page</p>
-                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/search-web-scraper">code on github</a>
+                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/search-web-scraper">code on Github</a>
                     </div>
                     <div class="card">
                         <h4>ExpressJs integration testing with Jest</h4>
                         <p>Testing Express server route controllers with Jest</p>
-                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/express-integration-testing">code on github</a>
+                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/express-integration-testing">code on Github</a>
                     </div>
                     <div class="card">
                         <h4>PWA Users</h4>
                         <p>Basic progressive web app with Google Workbox that fetches user data form the placeholder API</p>
-                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on github</a>
+                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on Github</a>
                     </div>
                     <div class="card">
                         <h4>Auth with JSON Web Tokens</h4>
                         <p>Basic app with JWT authorization for three different servers: the authServer handles authorization, the other two are for API related requests</p>
-                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on github</a>
+                        <a class="btn" target="_blank" href="http://www.github.com/jorishr/pwa-users">code on Github</a>
                     </div>
                 </div>
             </div>
@@ -293,7 +294,7 @@
                         <img src="images/guess_the_flag.png" alt="Screenshot of the game: Guess the flag">
                         <div class="card__btn-group">
                             <a class="btn" target="_blank" href="http://guess-the-flag.jorisr.com">play the game</a>
-                            <a class="btn" target="_blank" href="http://www.github.com/jorishr/guess-the-flag">code on github</a>
+                            <a class="btn" target="_blank" href="http://www.github.com/jorishr/guess-the-flag">code on Github</a>
                         </div>
                     </div>                 
                     <div class="card">
@@ -303,7 +304,7 @@
                         <img src="images/patatap.jpg" alt="Screenshot of the game: Patatap">
                         <div class="card__btn-group">
                             <a class="btn" target="_blank" href="http://patatap.jorisr.com">play the game</a>
-                            <a class="btn" target="_blank" href="http://www.github.com/jorishr/patatap-clone">code on github</a>
+                            <a class="btn" target="_blank" href="http://www.github.com/jorishr/patatap-clone">code on Github</a>
                         </div>
                     </div>                 
                 </div>
@@ -329,7 +330,7 @@
                 <p>NodeJs, ExpressJs</p>
                 <p>REST API's, AJAX</p>
                 <p>Autentication: sessions (PassportJs), JWT</p>
-                <p>MongoDb (Mongoose), MySQL</p>
+                <p>MongoDb (Mongoose), MySQL, Redis</p>
                 <p>Deployment: VPS (Ubuntu, Nginx, PM2, SSH), Linux CLI</p>
                 <p>Domain setup and management</p>
             </div>
@@ -343,7 +344,7 @@
         </div>
         <div class="about">
             <h3>About me</h3>
-            <p>My first experience with code dates back to a time when you had to know something about MS-DOS commands in order to play simple video games on a PC. Since then I went on to explore other horizons and I hold a Masters degree in International Relations. However, through some professional projects that involved Wordpress management and customization I rediscovered my interest for technology and software development. In early 2019 I decided to start learning the web stack and to gradually transition into a career as a developer. Now I want you to hire me to help you build amazing web based tools that add value to your company and solve problems for your clients.
+            <p>My first experience with code dates back to a time when you had to know something about MS-DOS commands in order to play simple video games on a PC. Since then I went on to explore other horizons and I hold a Masters degree in International Relations. However, through some professional projects that involved Wordpress management and customization I rediscovered my interest for technology and software development. In early 2019 I decided to start learning the web stack and to gradually transition into a career as a developer. <em>Now I want you to <strong>hire me</strong> to help you build amazing web based tools that add value to your company and solve problems for your clients.</em>
             </p>
             <h3>Tools and resources I use and recommend</h3>
             <ul>
@@ -360,9 +361,12 @@
                 <li>
                     <p>To discover new front-end design tricks I follow the Youtube channels of 
                         <a target="_blank" href="https://www.youtube.com/user/DesignCourse">Gary Simon (Coursera)</a> and
-                        <a target="_blank" href="https://www.youtube.com/user/KepowOb">Kevin Powell</a>. 
-                        For computer science related video's I highly recommend the <a target="_blank" href="https://www.youtube.com/user/Computerphile">Computerphile</a> channel.
-                        <a target="_blank" href="https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ">Coding Tech</a> is a channel that will keep you up-to-date with tech conferences from all around the world.
+                        <a target="_blank" href="https://www.youtube.com/user/KepowOb">Kevin Powell</a>.
+                    </p> 
+                </li>
+                <li>
+                    <p>For computer science related video's I highly recommend the <a target="_blank" href="https://www.youtube.com/user/Computerphile">Computerphile</a> channel while
+                        <a target="_blank" href="https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ">Coding Tech</a> will keep you up-to-date with tech conferences from all around the world.
                     </p>
                 </li>
             </ul>

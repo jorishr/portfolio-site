@@ -62,7 +62,8 @@ section#skill-section {
     }
 
     ul {
-        list-style-type: disc;
+        list-style-type: none;
+        padding: 0;
 
         li {
             margin-bottom: 1.5em;
@@ -85,6 +86,7 @@ section#skill-section {
         }
     
         ul {
+
             li {
                 margin-bottom: 2em;
             }
