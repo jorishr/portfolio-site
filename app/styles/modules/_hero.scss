@@ -68,6 +68,7 @@
         animation: popup 1s 4s ease-in forwards;
         opacity: 0;
         border: 2px solid var(--textColor-base);
+        border: 2px solid var(--accent);
     
         &:active, 
         &:hover, 
