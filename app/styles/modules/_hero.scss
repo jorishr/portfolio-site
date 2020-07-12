@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    overflow: hidden;
+    //overflow: hidden;
 
     &__text {
         padding-bottom: var(--pd-base);
@@ -103,8 +103,8 @@
         }
     
         p {
-            font-size: 60px;
-            line-height: 80px;   
+            font-size: 40px;
+            line-height: 60px;   
         }
 
         a.btn {
@@ -145,6 +145,27 @@
         }
     }
 }
+@media screen and (min-width: 1024px){
+    
+    .hero-section {
+
+        padding: var(--pd-base);
+
+        h1 {
+            font-size: var(--fs-md);
+        }
+    
+        h2 {
+            font-size: var(--fs-base);
+        }
+    
+        p {
+            font-size: 60px;
+            line-height: 80px;   
+        }
+    }
+}
+
 
 //browser windows with insufficent height to show full hero text
 @media screen and (max-height: 500px) {
