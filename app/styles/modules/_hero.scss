@@ -93,6 +93,10 @@
         &__text {
             padding-bottom: var(--pd-base);
         }
+
+        &__titles {
+            padding-bottom: 0;
+        }
           
         h1 {
             font-size: var(--fs-md);
@@ -103,15 +107,20 @@
         }
     
         p {
-            font-size: 40px;
+            font-size: 35px;
             line-height: 60px;   
         }
 
-        a.btn {
-            visibility: hidden;
+        a#start {
+            margin-bottom: 3em;
         }
 
-        &::after {
+
+/*         a.btn {
+            visibility: hidden;
+        } */
+
+/*         &::after {
             content: "||";
 
             padding-top: 2px;
@@ -135,7 +144,7 @@
             animation: 
                 moveArrow 2s ease-in-out infinite,
                 fadeIn 2s 4.5s ease-in-out forwards;
-        }
+        } */
 
         &.hideScrollIndicator {
             
