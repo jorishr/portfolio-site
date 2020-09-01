@@ -58,6 +58,11 @@
         animation: fadeInLeftBig 2.5s ease-in forwards;
     }
 
+    #location {
+        text-decoration: line-through;
+        color: unset;
+    }
+
     a#start {
         margin: 0 auto;
         display: block;
