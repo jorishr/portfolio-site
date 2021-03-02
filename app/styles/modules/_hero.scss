@@ -6,16 +6,19 @@
     flex-direction: column;
     justify-content: space-evenly;
     //overflow: hidden;
+    text-align: right;
 
     &__text {
         padding-bottom: var(--pd-base);
+        animation: fadeIn 4s .75s ease-in forwards;
+        opacity: 0;
     }
 
     &__titles {
         padding-bottom: var(--pd-sm);
         
         transform: scaleY(0);
-        animation: bottomUp 2s 2.5s ease-in-out forwards;
+        animation: bottomUp 2s 1.25s ease-in-out forwards;
     }
 
     h1, h2 {
@@ -45,7 +48,7 @@
         }
     }
     
-    p:first-of-type {
+/*     p:first-of-type {
         animation: fadeInLeftBig .75s ease-in forwards;
     }
     p:nth-of-type(2) {
@@ -56,24 +59,24 @@
     }
     p:last-of-type {
         animation: fadeInLeftBig 2.5s ease-in forwards;
-    }
-
-    #location {
-/*         text-decoration: line-through; */
-        color: unset;
-    }
+    } */
 
     a#start {
         margin: 0 auto;
-        display: block;
+        //display: block;
+        display: none;
         padding: var(--pd-xs) var(--pd-sm);
         background-color: var(--bgColor-accent);
         color: var(--textColor-base);
         text-transform: none;
-        animation: popup 1s 4s ease-in forwards;
+        animation: popup 4s 2s ease-in forwards;
         opacity: 0;
         border: 2px solid var(--textColor-base);
         border: 2px solid var(--accent);
+        position: absolute;
+        left: 50%;
+        bottom: -5%;
+        transform: translateX(-50);
     
         &:active, 
         &:hover, 
@@ -242,6 +245,11 @@
 @keyframes bottomUp {
     from {transform: scaleY(0);}
     to {transform: scaleY(1);}
+}
+
+@keyframes TopDown {
+    from {transform: translateY(-100%);}
+    to {transform: translate(0);}
 }
 
 @keyframes fadeOut {

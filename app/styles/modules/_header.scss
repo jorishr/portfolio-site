@@ -1,21 +1,14 @@
 header {
     height: 100px;
+    overflow: hidden;
     
     .header-container {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content:flex-end;
         padding: var(--pd-base) var(--pd-base) var(--pd-sm) var(--pd-base);
-
-        .logo {
-            max-width: 40vw;
-            max-height: 10vh;
-            overflow: hidden;
-
-            svg {
-                width: 6em;
-            }
-        }
+        transform: translateY(-100%);
+        animation: TopDown 3s .5s ease-in forwards;
 
         i {
             color: var(--textColor-light);
